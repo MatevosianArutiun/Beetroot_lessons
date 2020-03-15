@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Summary</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        background: url(./poverhnost.jpg) center no-repeat;
+        background-size: cover;
+      }
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 60px 0 60px 0;
+      }
+      h1 {
+        font-size: 50px;
+        color: #636363;
+      }
+      .header__p {
+        font-size: 30px;
+        color: #ff9800;
+      }
+      .contact {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+        padding: 0 20px 0 20px;
+        margin-bottom: 100px;
+        margin-top: 30px;
+      }
+      h3 {
+        color: #383838;
+        font-size: 20px;
+        padding-bottom: 20px;
+      }
+      .contact a {
+        text-decoration: none;
+        color: #636363;
+      }
+      .content_info {
+        padding: 0 20px 0 20px;
+      }
+      .content_info__h2 {
+        font-size: 40px;
+        color: #636363;
+        text-align: center;
+        margin-bottom: 100px;
+      }
+      ul {
+        padding: 0 20px 0 20px;
+      }
+      .content_info__ul li {
+        padding-bottom: 60px;
+      }
+      footer {
+        height: 200px;
+        text-align: center;
+        margin-top: 100px;
+      }
+      .footer__p {
+        font-size: 50px;
+        color: #ff9800;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__foto">
+          <img src="./foto.png" alt="foto" title="foto" />
+        </div>
+        <div class="header__info">
+          <h1>Arutiun Matevosian</h1>
+          <p class="header__p">Front-end Developer</p>
+        </div>
+      </header>
+      <hr />
+      <main>
+        <div class="contact">
+          <div class="contact__mail">
+            <h3>Email</h3>
+            <a href="mailto:arutiunmatevosian@gmail.com"
+              >arutiunmatevosian@gmail.com</a
+            >
+          </div>
+          <div class="contact__phone">
+            <h3>Phone</h3>
+            <a href="tel:+3 8 (096) 947 83 55">+3 8 (096) 947 83 55</a>
+          </div>
+          <div class="contact__web">
+            <h3>Web</h3>
+            <a
+              href="https://www.instagram.com/arutiunmatevosian/"
+              target="_blank"
+              >instagram</a
+            >
+          </div>
+          <div class="contact__location">
+            <h3>Location</h3>
+            <a href="https://goo.gl/maps/NXrb46f6Qz7zvyT88" target="_blank"
+              >Kremenchug</a
+            >
+          </div>
+        </div>
+        <div class="content_info">
+          <h2 class="content_info__h2">Education</h2>
+          <ul class="content_info__ul">
+            <li>
+              2007 - Kremenchug College of the Kremenchug State Polytechnic
+              University named after Mikhail Ostrogradsky, specialty "Enterprise
+              Economics" junior specialist
+            </li>
+            <li>
+              2009 - Kremenchug State Polytechnic University named after Mikhail
+              Ostrogradsky, specialty "Enterprise Economics" bachelor
+            </li>
+            <li>
+              2010 - Kremenchug State Polytechnic University named after Mikhail
+              Ostrogradsky, specialty "Enterprise Economics" specialist
+            </li>
+            <li>
+              2020 г. - Beetroot Academy "Web Developer & Front-end Expert"
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p class="footer__p">Arutiun</p>
+      <p class="footer__p">Matevosian</p>
+    </footer>
+  </body>
+</html>

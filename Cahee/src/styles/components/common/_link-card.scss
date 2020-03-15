@@ -1,0 +1,29 @@
+.link-card {
+    color: $text-main-color;
+    height: 100%;
+    display: flex;
+    &__text-wraper {
+        height: 100%;
+    }
+    &__text {
+        height: 100%;
+        font-size: $H300;
+        text-align: center;
+        @include flex(center, center ,column);
+        flex-shrink: 1;
+        flex-grow: 2;
+        border-right: 1px solid $text-main-color;
+    }
+    &__icon-wraper {
+        height: 100%;
+        @include flex(center, center ,column);
+        text-align: center;
+        flex-shrink: 2;
+        flex-grow: 1;
+    }
+    &__icon {
+        font-size: $H700;
+    }
+   
+
+}

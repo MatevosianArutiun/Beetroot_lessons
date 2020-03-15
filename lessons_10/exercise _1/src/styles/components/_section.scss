@@ -1,0 +1,32 @@
+.section {
+    background:$main-color;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    &__title {
+        font-size: 5.62rem;
+        color: $white;
+        max-width: 620px;
+        margin: $container;
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        color: $white;
+        font-size: 1.06rem;
+        max-width: 620px;
+        margin: $container;
+        margin-bottom: 40px;
+        line-height: 1.6;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1170px;
+        margin: $container;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+

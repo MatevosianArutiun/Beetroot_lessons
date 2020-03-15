@@ -1,0 +1,43 @@
+.section-intro {
+    padding-bottom: 50px;
+    background-image: url(../images/section_bg.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    &__info {
+        @extend %container;
+        padding: $padding;
+        padding-top: 240px;
+        margin-bottom: 150px;
+        @media screen and (max-width:$screen-desktop-large) {
+            padding-top: 225px;
+           
+        }
+        @media screen and (max-width:$screen-tablet) {
+            width: fit-content;
+            text-align: center;
+            padding-top: 240px;
+            
+        }
+    }
+    &__title {
+        font-size: $H800;
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-size: $H200;
+        max-width: 350px;
+        line-height: 1.6;
+        font-weight: 300;
+        margin-bottom: 40px;
+        @media screen and (max-width:$screen-tablet) {
+            max-width: 60%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+    &__scroll {
+        margin: 0 auto;
+        display: block;
+    }
+}

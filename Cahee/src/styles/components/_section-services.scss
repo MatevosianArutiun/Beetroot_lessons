@@ -1,0 +1,62 @@
+.section-services {
+  @extend %section;
+  background-color: $service-bg-color;
+  padding-top: 40px;
+  @media screen and (min-width: $screen-desktop) {
+  }
+  &__container {
+    @media screen and (min-width: $screen-desktop) {
+      @include flex(space-between, center, row);
+    }
+  }
+  &__content {
+    @media screen and (min-width: $screen-desktop) {
+      margin-right: 150px;
+      max-width: 400px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+  &__item {
+    background-color: $subscribe-bg-color;
+    height: 80px;
+    border-radius: 5px;
+    padding: 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    @media screen and (min-width: $screen-desktop) {
+      height: 100px;
+      transition: all 0.2s linear;
+    }
+  }
+  &__item:hover {
+    @media screen and (min-width: $screen-desktop) {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__picture {
+       @include flex(center, center ,column);
+  }
+  &__title {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: $white;
+    font-size: $logo-fs;
+  }
+  &__img-wraper {
+    @include padding-hack(100%);
+    @media screen and (min-width: $screen-desktop) {
+        width: 90%;
+        padding-bottom: 90%;
+      }
+  }
+}

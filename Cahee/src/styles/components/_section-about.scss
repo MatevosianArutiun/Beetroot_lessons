@@ -1,0 +1,46 @@
+.section-about {
+    background-color: $about-bg-color;
+    &__container {
+        @extend %section;
+        @media screen and (min-width: $screen-desktop) {
+            @include flex (space-between, center, row);
+            height: 100vh;
+        }
+
+    }
+    &__picture {
+        @include padding-hack(100%);
+        width: 100%;
+        @media screen and (min-width: $screen-desktop) {
+            @include flex(center, center ,column);
+            height: 100vh;
+        }
+    }
+    &__imege {
+    }
+    &__content {
+      text-align: center;
+      @media screen and (min-width: $screen-desktop) {
+        @include flex(center, center ,column);
+        height: 100vh;
+        padding-left: 100px;
+        text-align: start;
+    }
+      
+
+    }
+    &__title {
+        font-size: $H800;
+        color: $white;
+        margin-bottom: 25px;
+        @media screen and (min-width: $screen-desktop) {
+            font-size: $H900;
+        }
+    }
+    &__text {
+        font-size: $H200;
+        color: $white;
+        margin-bottom: 25px; line-height: 1.6;
+
+    }
+}

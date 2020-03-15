@@ -1,0 +1,147 @@
+@import url('weather-icons-wind.css');
+@import url('weather-icons.css');
+
+:root {
+  --header: #f4ffff;
+  --white: #ffffff;
+  --body: #3399cc;
+  --body-border: #2b81ac;
+  --Lisbon:#3399CC;
+  --Paris:#33CCCC;
+  --Belgrade:#996699;
+  --Moscow:#996699;
+  --Tel_Aviv:#E2674A;
+  --Cair:#FFCC66;
+  --New_York:#99CC99;
+  --New_Delhi:#669999;
+  --San_Francisco:#CC6699;
+  --Tokyo:#339966;
+  --Sydney:#666699;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .3s ease-in;
+}
+
+body {
+  background: var(--body);
+  width: 100vw;
+  height: 100vh;
+  border: 1.6rem solid var(--body-border);
+  padding-top: 3rem;
+  font-family: 'Trebuchet MS' ,Trebuchet, Arial, sans-serif ;
+}
+.header {
+  max-width: 57rem;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+}
+.header__title {
+  color: var(--header);
+  margin: 0 0.6rem;
+  font-weight: 100;
+  
+}
+.main {
+  max-width: 57rem;
+  margin: 0 auto;
+}
+
+
+.main__list {
+  max-width: 57rem;
+  margin: 0 auto;
+  margin: 0 0.6rem;
+  border: 0.1rem solid var(--white);
+  font-size: 0;
+  margin-bottom: 2rem;
+}
+.main-list__item {
+  display: inline-block;
+  border: 0.1rem solid var(--white);
+  text-align: center;
+  padding: 20px 0;
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+.lisbon {
+  background: var(--Lisbon);
+}
+.paris {
+  background: var(--Paris);
+}
+.belgrade {
+  background: var(--Belgrade);
+}
+.moscow {
+  background: var(--Moscow);
+}
+.tel_aviv {
+  background: var(--Tel_Aviv);
+}
+.cair {
+  background: var(--Cair);
+}
+.new_york {
+  background: var(--New_York);
+}
+.new_delhi {
+  background: var(--New_Delhi);
+}
+.san_francisco {
+  background: var(--San_Francisco);
+}
+.tokyo {
+  background: var(--Tokyo);
+}
+.sydney {
+  background: var(--Sydney);
+}
+.main__list:hover .main-list__item:not(:hover) {
+  opacity: 0.4;
+}
+.main-list__item {
+  cursor: pointer;
+}
+.main-list__item:nth-child(1),
+.main-list__item:nth-child(9) {
+  display: inline-block;
+  width: 50%;
+  font-size: 1.3rem;
+}
+.main-list__item:nth-child(2),
+.main-list__item:nth-child(3),
+.main-list__item:nth-child(4),
+.main-list__item:nth-child(5),
+.main-list__item:nth-child(6),
+.main-list__item:nth-child(7),
+.main-list__item:nth-child(8),
+.main-list__item:nth-child(10) {
+  display: inline-block;
+  width: 25%;
+  font-size: 1.3rem;
+}
+.main-list__item:nth-child(11) {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.main-list__title {
+  font-weight: 100;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+i {
+  font-size: 1.3rem;
+  opacity: 0.5;
+}
+.foot {
+  color: var(--header);
+  margin: 0 0.6rem;
+  font-weight: 100;
+
+}

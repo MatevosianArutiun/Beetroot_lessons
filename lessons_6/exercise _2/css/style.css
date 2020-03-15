@@ -1,0 +1,110 @@
+:root {
+    --header: #4A4F56;
+    --white: #ffffff;
+    --body: #3B3F45;
+    --color-text:#EB7E7D;
+    --color-text-list:#C2C6CF;
+    --li-even:#88839E;
+    --li-noteven:#7A7593;
+    --li-3:
+    --li-4:
+    --li-5:
+    --li-6:
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+body {
+    min-height: 100vh;
+    background: var(--body);
+    font-family: 'Trebuchet MS' ,Trebuchet, Arial, sans-serif ;
+    border: 15px solid white;
+}
+.header {
+    background: var(--header);
+    color: var(--color-text);
+    text-align: center;
+    height: 100px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+.header__title {
+    font-size: 40px;
+}
+.header__text {
+    font-size: 25px;
+}
+.main {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+.form-list {
+    list-style: none;
+}
+.form-list:hover {
+    cursor: pointer;
+}
+.form-list__item {
+    height: 60px;
+    line-height: 30px;
+    padding: 15px;
+    color: var(--white);
+    font-size: 25px;
+
+}
+.form-list__even {
+    background: var(--li-even);
+
+}
+.form-list__noteven {
+    background: var(--li-noteven);
+}
+.form-list__input {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+.form-list__span {
+    font-size: 16px;
+    color: var(--color-text-list);
+}
+.form-list__span::before {
+    content: '(';
+    padding: 3px;
+}
+.form-list__span::after {
+    content: ")";
+    padding: 3px;
+}
+.form-list__item:hover {
+    border-bottom: 3px solid var(--white);
+    border-top: 3px solid var(--white);
+    cursor: pointer;
+    background: var(--header);
+}
+.form-list__item:active {
+    text-decoration: line-through;
+    background: var(--color-text);  
+}
+.form-list__input:checked + span {
+    text-decoration: line-through;
+    color: var(--color-text-list); 
+}
+span:hover {
+    cursor: pointer;
+}
+.footer {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    height: 100px;
+    background: var(--header);
+    line-height: 100px;
+    color: var(--color-text);
+}
+

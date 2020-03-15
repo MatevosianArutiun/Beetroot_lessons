@@ -1,0 +1,18 @@
+.button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    font-size: $H300;
+    font-weight: 300;
+    background-color: $btn-color;
+    padding: 15px 30px;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    @media screen and (max-width:$screen-tablet) {
+        display: block;
+
+    }
+    &:hover {
+        background-image: linear-gradient(to top, rgb(101, 115, 255), rgb(111, 114, 247), rgb(120, 114, 239), rgb(130, 113, 231), rgb(139, 112, 223), rgb(149, 111, 215), rgb(158, 111, 208), rgb(168, 110, 200), rgb(177, 109, 192), rgb(187, 108, 184), rgb(196, 108, 176), rgb(206, 107, 168));
+    }
+}

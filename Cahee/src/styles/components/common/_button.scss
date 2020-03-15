@@ -1,0 +1,15 @@
+.button {
+    @include text($H300, 300, $white);
+    background-color: $header-btn-color;
+    padding: 15px 25px;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+    width: 80%;
+   
+    @media screen and (min-width:$screen-desktop) {
+        width: fit-content;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

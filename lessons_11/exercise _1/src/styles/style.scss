@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700&display=swap');
+
+
+@import './core/vars';
+@import './core/common';
+@import './core/inheritance';
+@import './core/_mixins';
+
+
+@import './components/section-intro';
+@import './components/section-about';
+@import './components/header';
+@import './components/nav';
+@import './components/button';
+
+
+
+.box {
+    background-color: $btn-color-hover;
+    width:100vw ;
+    height:100vh ;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.box1 {
+    width: 50%;
+
+}
+.box2 {
+    width: 50%;
+
+}
+.box__img {
+width: 100%;
+height: auto;
+// object-fit: cover;
+}

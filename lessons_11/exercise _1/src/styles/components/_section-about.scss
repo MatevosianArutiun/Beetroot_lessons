@@ -1,0 +1,29 @@
+.section-about {
+    background-color: $about-bg;
+    @extend %flex;
+    padding: $padding;
+    @media screen and (max-width:$screen-desktop) {
+        flex-wrap: wrap;
+    }
+    &__imeges {
+     width: 50%;
+      
+    }
+    &__info {
+        width: 50%;
+    }
+    &__title {
+        font-size: $H900;
+        color: $white;
+        margin-bottom: 35px;
+    }
+    &__text {
+        font-size: $H200;
+        color: $white;
+        max-width: 495px;
+        line-height: 1.6;
+        font-weight: 300;
+        margin-right: 150px;
+        margin-bottom: 25px;
+    }
+}

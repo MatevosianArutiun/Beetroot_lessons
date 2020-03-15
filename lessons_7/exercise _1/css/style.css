@@ -1,0 +1,87 @@
+@import url('icon.css');
+
+:root {
+  --text-1: #9A9A9A;
+  --text-2: #141414;
+  --white: #ffffff;
+  --main-color: #00C9CC;
+  --bg-box: #F7F7F7;
+  --border-box:#EDEDED;
+ 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--white);
+  width: 100vw;
+  height: 100vh;
+  padding-top: 2rem;
+  line-height: 1.4;
+  font-family: 'Myriad Pro' , Arial, sans-serif ;
+
+}
+.header {
+  text-align: center;
+  max-width: 35rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-bottom: 6.3rem;
+}
+.header__slogan {
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  color: var(--text-1);
+  margin-bottom: 1rem;
+}
+.header__title {
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  font-weight: 100;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+.header__text {
+  font-size: 1rem;
+  color: var(--text-1);
+}
+.main {
+
+}
+.main__list {
+  max-width: 59.3rem;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+}
+.main__list__item {
+  background: var(--bg-box);
+  width: 25%;
+  border: 1px solid #EDEDED;
+  padding: 3.4rem 1.9rem 5.3rem 1.9rem;
+
+}
+.main__list__item:hover {
+  color: var(--white);
+  background: var(--main-color);
+  cursor: pointer;
+}
+.main__list__icon {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.main__list__caption {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+  font-weight: 100;
+}
+.main__list__text {
+  font-size: 0.9rem;
+}

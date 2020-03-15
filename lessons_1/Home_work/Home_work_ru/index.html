@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Резюме</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 60px 0 60px 0;
+      }
+      h1 {
+        font-size: 50px;
+        color: #636363;
+      }
+      .header__p {
+        font-size: 30px;
+        color: #ff9800;
+      }
+      .contact {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+        padding: 0 20px 0 20px;
+        margin-bottom: 100px;
+        margin-top: 30px;
+      }
+      h3 {
+        color: #383838;
+        font-size: 20px;
+        padding-bottom: 20px;
+      }
+      .contact a {
+        text-decoration: none;
+        color: #636363;
+      }
+      .content_info {
+        padding: 0 20px 0 20px;
+      }
+      .content_info__h2 {
+        font-size: 40px;
+        color: #636363;
+        text-align: center;
+        margin-bottom: 100px;
+      }
+      ul {
+        padding: 0 20px 0 20px;
+      }
+      .content_info__ul li {
+        padding-bottom: 60px;
+      }
+      footer {
+        height: 200px;
+        text-align: center;
+        margin-top: 100px;
+      }
+      .footer__p {
+        font-size: 50px;
+        color: #ff9800;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__foto">
+          <img src="./foto.png" alt="foto" title="foto" />
+        </div>
+        <div class="header__info">
+          <h1>Арутюн Матевосян</h1>
+          <p class="header__p">Front-end разработчик</p>
+        </div>
+      </header>
+      <hr />
+      <main>
+        <div class="contact">
+          <div class="contact__mail">
+            <h3>Почта</h3>
+            <a href="mailto:arutiunmatevosian@gmail.com"
+              >arutiunmatevosian@gmail.com</a
+            >
+          </div>
+          <div class="contact__phone">
+            <h3>Телефон</h3>
+            <a href="tel:+3 8 (096) 947 83 55">+3 8 (096) 947 83 55</a>
+          </div>
+          <div class="contact__web">
+            <h3>Сайт</h3>
+            <a
+              href="https://www.instagram.com/arutiunmatevosian/"
+              target="_blank"
+              >instagram</a
+            >
+          </div>
+          <div class="contact__location">
+            <h3>Город</h3>
+            <a href="https://goo.gl/maps/NXrb46f6Qz7zvyT88" target="_blank"
+              >Кременчуг</a
+            >
+          </div>
+        </div>
+        <div class="content_info">
+          <h2 class="content_info__h2">Образование</h2>
+          <ul class="content_info__ul">
+            <li>
+              2007г - Кременчугский колледж Кременчугского государственного
+              политехнического университета имени Михаила Остроградского по
+              специальности "Экономика предприятия" младший специалист
+            </li>
+            <li>
+              2009г - Кременчугский государственный политехнический университет
+              имени Михаила Остроградского по специальности "Экономика
+              предприятия" бакалавр
+            </li>
+            <li>
+              2010г - Кременчугский государственный политехнический университет
+              имени Михаила Остроградского по специальности "Экономика
+              предприятия" специалист
+            </li>
+            <li>
+              2020 г. - Beetroot Academy "Веб-разработчик и Front-end Эксперт"
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p class="footer__p">Арутюн</p>
+      <p class="footer__p">Матевосян</p>
+    </footer>
+  </body>
+</html>

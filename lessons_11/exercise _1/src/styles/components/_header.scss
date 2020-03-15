@@ -1,0 +1,19 @@
+.header {
+    @extend %container;
+    @extend %flex;
+    padding: $padding;
+    margin-bottom: 200px;
+    background-color:rgba(255 , 255 , 255 , 0.9);
+    
+    border-radius: 5px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    &__logo {
+        font-size: $logo-fs;
+        font-weight: 400;
+        font-family: $font-family-logo;
+        color: $text-color;
+    }
+   
+}

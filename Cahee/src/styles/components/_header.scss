@@ -1,0 +1,32 @@
+.header {
+    background-image: url(../images/section_bg.png);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    &__content {
+        height: 100%;
+    }
+    &__container {
+        @include flex(center, center ,column);
+        text-align: center;
+        height: 100vh;
+        @media screen and (min-width:$screen-desktop) {
+            @include flex(center, flex-start ,column);
+            text-align: left;
+        }
+        
+
+    }
+    &__title {
+        font-size: $H800;
+        color: $text-main-color;
+        margin-bottom: 20px;
+    }
+    &__text {
+        max-width: 380px;
+        line-height: 1.6;
+        font-size: $H200;
+        color: $text-main-color;
+        margin-bottom: 20px;
+    }
+}
