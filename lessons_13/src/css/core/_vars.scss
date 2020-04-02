@@ -1,0 +1,43 @@
+// Natural colors
+$white: white;
+$grey-light: #B9B9B9;
+$grey: #9D9D9D;
+$dark: #262626;
+
+// Bacground colors
+
+// Text colors
+$main-text-color:#393939;
+
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+$logo-fs: calcRem(50px);
+
+$H900: calcRem(90px);
+$H800: calcRem(54px);
+$H700: calcRem(40px);
+$H600: calcRem(34px);
+$H500: calcRem(25px);
+$H400: calcRem(21px);
+$H300: calcRem(20px);
+$H200: calcRem(17px);
+$H100: calcRem(16px);
+$H50: calcRem(15px);
+$H10: calcRem(14px);
+
+$base-font: 'Lato', sans-serif;
+
+$max-width: 900px;
+
+$screen-iphone: 375px;
+$screen-iphone-plus: 414px;
+$screen-tablet-small: 600px;
+$screen-tablet: 768px;
+$screen-desktop: 1024px;
+$screen-desktop-large: 1280px;
+$screen-hd: 1366px;
+$screen-fullhd: 1440px;
+$screen-retina: 1660px;

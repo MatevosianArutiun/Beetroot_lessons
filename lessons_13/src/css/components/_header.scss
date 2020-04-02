@@ -1,0 +1,80 @@
+.header {
+    background-image: url(../../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 280px;
+    @include flex (center ,center ,column);
+    &__logo {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 90px;
+        fill: $white;
+        stroke: $white;
+        @media screen and (min-width: $screen-tablet) {
+            // animation: pulsate 4s linear infinite;
+            // @keyframes pulsate {
+            //     0% {opacity: 1;}
+            //     50% {opacity: 0.1;}
+            //     100% {opacity: 1;}
+                
+            // }
+            stroke: $white;
+            stroke-width: 2;
+            stroke-dasharray: 500 500;
+            stroke-dashoffset: 100;
+            animation: dasharray 5s infinite alternate;
+            @keyframes dasharray {
+                100% {
+                  stroke-dasharray: 0 40;
+                  fill: none;
+                }
+              }
+        }
+    }
+    &__title {
+        @include text($H800 ,600 ,$white);
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        margin-bottom: 50px;
+        &--center {
+            display: block;
+            text-align: center;
+        }
+    }
+    &__text {
+        @include text($H50 ,400 ,$white);
+        letter-spacing: 1.5px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        &:nth-last-of-type(1) {
+            margin-bottom: 200px;
+        }
+    }
+   
+    &__scroll {
+        width: 23px;
+        height: 37px;
+        margin-bottom: 100px;
+        @media screen and (min-width: $screen-tablet) {
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-name: bounce-1;
+            animation-timing-function: linear;
+            @keyframes bounce-1 {
+                0%   { transform: translateY(0); }
+                50%  { transform: translateY(-10px); }
+                100% { transform: translateY(0); }
+            }
+        }
+        
+    }
+}
+
+
+.logo {
+    display: none;
+}
+.scroll {
+    display: none;
+}
