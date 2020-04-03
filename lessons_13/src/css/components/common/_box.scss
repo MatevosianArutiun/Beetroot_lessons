@@ -1,0 +1,79 @@
+.box {
+    position: relative;
+    padding: 0 24px;
+    &__title {
+      @include text($H600, 700, $main-text-color);
+      position: absolute;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      right: 50%;
+      top: 70px;
+      width: 100%;
+      transform: translateX(50%);
+      text-align: center;
+      @media screen and (min-width: $screen-tablet) {
+        width: 900px;
+        @include text($H600, 700, $main-text-color);
+        top: 117px;
+        
+      }
+      &:before {
+        @media screen and (min-width: $screen-desktop) {
+            display: block;
+            content: "";
+            height: 1px;
+            width: calc(50% - 180px);
+            background: black;
+            position: absolute;
+            top: 22px;
+            left: 0;
+        }
+        
+      }
+      &::after {
+        @media screen and (min-width: $screen-desktop) {
+            display: block;
+            content: "";
+            height: 1px;
+            width: calc(50% - 180px);
+            background: black;
+            position: absolute;
+            top: 22px;
+            right: 0;
+        }
+        
+      }
+    }
+  
+    &__container {
+      padding: 100px 0 100px 0;
+      @media screen and (min-width: $screen-tablet) {
+        padding: 140px 0 150px 0;
+      }
+    }
+    &__content {
+      padding: 0 20px;
+      border-top: none;
+      padding: 40px 10px 40px 10px;
+      @media screen and (min-width: $screen-desktop) {
+        padding: 70px 0 50px 0;
+        border: 1px solid $dark;
+        border-top: none;
+      }
+    }
+    &__text {
+      @include text($H100, 400, $main-text-color);
+      line-height: 1.6;
+      text-align: center;
+      margin: 0 auto;
+      @media screen and (min-width: $screen-tablet) {
+        width: 440px;
+      }
+      &:first-child {
+        margin-bottom: 35px;
+        @media screen and (min-width: $screen-tablet) {
+          width: 520px;
+        }
+      }
+    }
+  }

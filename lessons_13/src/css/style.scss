@@ -9,6 +9,16 @@
 @import './core/mixins';
 
 
+
 // Common components
+@import './components/common/box';
+
+
+//  components
 @import './components/header';
 @import './components/section-about';
+@import './components/section-services';
+
+
+
+
