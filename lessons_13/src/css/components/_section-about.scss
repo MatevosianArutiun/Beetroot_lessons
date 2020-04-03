@@ -1,56 +1,55 @@
 .section-about {
-    position: relative;
-    padding: 0 24px;
-    &__title {
-        @include text($H400, 700, $main-text-color);
-        position: absolute;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        right: 50%;
-        top: 88px;
-        transform: translateX(50%);
-        width: 200px;
-        text-align: center;
-        background-color: $white;
-        @media screen and (min-width: $screen-tablet) {
-            @include text($H600, 700, $main-text-color);
-            top: 123px;
-            width: 420px;
-        }
+  position: relative;
+  padding: 0 24px;
+  &__title {
+    @include text($H400, 700, $main-text-color);
+    position: absolute;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    right: 50%;
+    top: 88px;
+    transform: translateX(50%);
+    width: 200px;
+    text-align: center;
+    background-color: $white;
+    @media screen and (min-width: $screen-tablet) {
+      @include text($H600, 700, $main-text-color);
+      top: 123px;
+      width: 420px;
     }
-    
-    &__container {
-        padding: 100px 0 100px 0;
-        @media screen and (min-width: $screen-tablet-small) {
-            padding: 0px 0 0px 0;
-        }
-        @media screen and (min-width: $screen-tablet) {
-            padding: 140px 0 150px 0;
-        }
-    }
-    &__content {
-        padding: 0 20px;
-        border: 1px solid $grey;
-        padding: 40px 10px 40px 10px;
-        @media screen and (min-width: $screen-tablet){
-            padding: 70px 0 50px 0;
-            border: 1px solid $dark;
-        }
-    }
-    &__text {
-        @include text($H100, 400, $main-text-color);
-        line-height: 1.6;
-        text-align: center;
-        margin: 0 auto;
-        @media screen and (min-width: $screen-tablet) {
-            width: 440px;
-        }
-        &:first-child {
-            margin-bottom: 35px;
-            @media screen and (min-width: $screen-tablet){
-                width: 520px;
-            }
-        }
+  }
 
+  &__container {
+    padding: 100px 0 100px 0;
+    @media screen and (min-width: $screen-tablet-small) {
+      padding: 0px 0 0px 0;
     }
+    @media screen and (min-width: $screen-tablet) {
+      padding: 140px 0 150px 0;
+    }
+  }
+  &__content {
+    padding: 0 20px;
+    border: 1px solid $grey;
+    padding: 40px 10px 40px 10px;
+    @media screen and (min-width: $screen-tablet) {
+      padding: 70px 0 50px 0;
+      border: 1px solid $dark;
+    }
+  }
+  &__text {
+    @include text($H100, 400, $main-text-color);
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 auto;
+    @media screen and (min-width: $screen-tablet) {
+      width: 440px;
+    }
+    &:first-child {
+      margin-bottom: 35px;
+      @media screen and (min-width: $screen-tablet) {
+        width: 520px;
+      }
+    }
+  }
 }
