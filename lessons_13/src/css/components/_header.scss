@@ -3,12 +3,10 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding-top: 100px;
-  width: 100vw;
-  padding: 0 20px;
+  padding: 100px 20px 0 20px;
+  width: 100%;
   @include flex(center, center, column);
   @media screen and (min-width: $screen-tablet) {
-      height: auto;
       padding: 0 20px;
       padding-top: 280px;
   }
@@ -52,6 +50,7 @@
     letter-spacing: 1.5px;
     line-height: 1.6;
     text-transform: uppercase;
+    width: 80%;
     &:nth-last-of-type(1) {
       margin-bottom: 200px;
     }
@@ -60,7 +59,7 @@
   &__scroll {
     width: 23px;
     height: 37px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     @media screen and (min-width: $screen-tablet) {
       margin-bottom: 100px;
       animation-duration: 1.5s;

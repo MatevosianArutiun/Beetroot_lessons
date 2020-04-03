@@ -4,10 +4,14 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
+  html {
+    overflow-x: hidden;
+  }
   
   body, a, button, input {
     font-family: $base-font;
   }
+  
   
   a {
     text-decoration: none;
