@@ -55,8 +55,9 @@ showAreaCircle();
 
 
     const flashDrive  = prompt("indicate how much memory is on a flash drive ( GB )");
+    const flashDriveGb = flashDrive * 1024;
     const fileSize = 820;
-    alert(`${Math.floor(flashDrive / fileSize)} files will fit on your flash drive`);
+    alert(`${Math.floor(flashDriveGb / fileSize)} files will fit on your flash drive`);
 
 
 
