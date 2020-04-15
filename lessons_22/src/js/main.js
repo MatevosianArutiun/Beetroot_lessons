@@ -67,14 +67,25 @@ showAreaCircle();
 
 
 
-// const number = prompt("enter a three-digit number (for example: 123)");
-// alert(`${number % 10}`);
-
-const number = prompt("enter a three-digit number (for example: 123)");
-alert(`${number.split("").reverse().join("")} your number`);
+// ВАРИАНТ ПЕРВЫЙ ИЗ ГУГЛА
+    
+const numeric = prompt("enter a three-digit number (for example: 123)");
+alert(`${numeric.split("").reverse().join("")} your number`);
 
    
+// ВАРИАНТ ВТОРОЙ КОНЕЧНО НАМУДРИЛ НЕ ПОНЯТНО ЧТО СКОРЕЕ ВСЕГО НЕ ПРАВИЛЬНО НО РАБОТАЕТ))
 
+const number = prompt("enter a three-digit number (for example: 456)");
+const number1 = number % 10; // 3
+const number2 = number1 / 1000; // 0.003
+const number3 = number / 1000; // 0.123
+const number4 = number3 - number2; // 0.12
+const number5 = number4 * 100; // 12
+const number6 = number5 % 10; // 2
+const number7 = number6 / 100; // 0.02
+const number8 = number4 - number7 ; // 0.1
+const number9 = number8 * 10; // 1
+alert(`${number1}${number6}${Math.round(number9)}`);
 
 
 
