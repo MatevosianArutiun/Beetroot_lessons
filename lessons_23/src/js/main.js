@@ -53,6 +53,9 @@ const yourSymbol = function () {
     if (isNaN(number) || number === '') {
         alert(`is not number`);
         yourSymbol();
+    } else if (number > 9) {
+        alert(`incorrect value`);
+        yourSymbol();
     } else if (number == 1) {
         alert(`your symbol -  ${one}`);
     } else if (number == 2) {
@@ -96,6 +99,9 @@ const matchedNumbers = function () {
     if (isNaN(number2) || number2 === '') {
                 alert(`is not number`);
                 matchedNumbers();
+            } else if (number2 < 100 || number2 > 999) {
+                alert(`this is not a three digit number`);
+                matchedNumbers();
             } else if (number2 [0] == number2 [1] || number2 [0] == number2 [2] || number2 [1] == number2 [2]) {
                 alert(`have the same numbers`);
             } else {
@@ -134,6 +140,7 @@ const palindrome = function() {
         palindrome();
     } else if (numberFiveDigit.length !== 5) {
         alert(`is not five-digit`);
+        palindrome();
     } else if (numberFiveDigit === numberFiveDigit.split('').reverse().join('')) {
         alert(`is palindrome `);
     } else {
