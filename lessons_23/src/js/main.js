@@ -187,9 +187,52 @@ exchangeDollars();
 
 
 
+const purchaseAmount = function () {
+    const discountOne = 3 / 100;
+    const discountTwo = 5 / 100;
+    const discountThree = 7 / 100;
+
+    const discountedAmount = prompt ('enter purchase amount from 200');
+    if (isNaN(discountedAmount) || discountedAmount === "") {
+        alert(`this is not a number`);
+        purchaseAmount();
+    } else if (discountedAmount < 200) {
+        alert(`incorrect amount`);
+        purchaseAmount();
+    } else if (discountedAmount >= 200 && discountedAmount <= 300) {
+        alert(`discounted amount ${discountedAmount - (discountedAmount * discountOne)}`);
+    } else if (discountedAmount > 300 && discountedAmount <= 500) {
+        alert(`discounted amount ${discountedAmount - (discountedAmount * discountTwo)}`);
+    } else if (discountedAmount > 500) {
+        alert(`discounted amount ${discountedAmount - (discountedAmount * discountThree)}`);
+    };
+
+}
+purchaseAmount();
 
 
 
+const circleSquared = function() {
+    const PI = 3.14;
+
+    const circumference = prompt ('enter the circumference');
+    if (isNaN(circumference) || circumference === "") {
+        alert(`this is not a number`);
+        circleSquared();
+    };
+
+
+    const squarePerimeter = prompt ('enter the perimeter of the square');
+    if (isNaN(squarePerimeter) || squarePerimeter === "") {
+        alert(`this is not a number`);
+        circleSquared();
+    } else if (circumference / PI < squarePerimeter / 4) {
+        alert(`your circle will fit in your square`);
+    } else {
+        alert(`your circle will not fit in your square`);
+    };
+}
+circleSquared();
 
 
 
