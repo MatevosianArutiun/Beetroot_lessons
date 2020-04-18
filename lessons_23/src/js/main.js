@@ -225,19 +225,69 @@ const circleSquared = function() {
     const squarePerimeter = prompt ('enter the perimeter of the square');
     if (isNaN(squarePerimeter) || squarePerimeter === "") {
         alert(`this is not a number`);
-        circleSquared();
     } else if (circumference / PI < squarePerimeter / 4) {
         alert(`your circle will fit in your square`);
     } else {
         alert(`your circle will not fit in your square`);
     };
-}
+};
 circleSquared();
 
 
 
 
+const question = function() {
+    const questionOne = prompt('2 + 2 = 4 ; 2 + 2 = 5 ; 2 + 2 = 3');
+    if (isNaN(questionOne) || questionOne === "" || questionOne < 3 || questionOne > 5) {
+        alert(`incorrect amount`);
+    };
+    switch(questionOne) {
+        case '4':
+            alert(`tru`);
+            break;
+        case '5':
+            alert(`false`);
+            break;
+        case '3':
+            alert(`false`);
+            break;
+    };
 
 
+    const questionTwo = prompt('3 + 3 = 7 ; 3 + 3 = 6 ; 3 + 3 = 8');
+    if (isNaN(questionTwo) || questionTwo === "" || questionTwo < 6 || questionTwo > 8) {
+        alert(`incorrect amount`);
+    };
+    switch(questionTwo) {
+        case '6':
+            alert(`tru`);
+            break;
+        case '7':
+            alert(`false`);
+            break;
+        case '8':
+            alert(`false`);
+            break;
+    };
+
+    const questionThree = prompt('4 * 5 = 21 ; 4 * 5 = 22 ; 4 * 5 = 20');
+    if (isNaN(questionThree) || questionThree === "" || questionThree < 20 || questionThree > 22) {
+        alert(`incorrect amount`);
+    };
+    switch(questionThree) {
+        case '20':
+            alert(`tru`);
+            break;
+        case '21':
+            alert(`false`);
+            break;
+        case '22':
+            alert(`false`);
+            break;
+    };
+
+
+};
+question();
 
 
