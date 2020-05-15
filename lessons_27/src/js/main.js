@@ -209,9 +209,7 @@ let multiplicationTable = () => {
 
 const GuessNumber = (numb) => {
   let n = 100;
-
   alert(`guess the number from 0 to 100`);
-
   do {
     numb = prompt(`your number > ${n} < or = ${n}`);
   } while (numb !== "=" && numb !== "<" && numb !== ">");
