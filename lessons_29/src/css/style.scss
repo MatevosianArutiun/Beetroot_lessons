@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // padding-top: 150px;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.btn {
+  position: absolute;
+  left: 800px;
+  top: 300px;
+  padding: 50px 100px;
+
+  transition: all 0.3s linear;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: grey;
+  opacity: 0.8;
+  width: 1500px;
+  height: 600px;
+  border-radius: 10px;
+
+  &__content {
+    padding: 50px;
+  }
+  &__btn-close {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+    padding: 20px 40px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__text {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+
+.container {
+  // position: relative;
+  padding-top: 150px;
+}
+
+.traffic-light {
+  height: 400px;
+  width: 200px;
+  background-color: grey;
+  margin-left: 200px;
+  text-align: center;
+
+  &__list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  &__item {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  &__button {
+    padding: 10px 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
