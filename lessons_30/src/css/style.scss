@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.info {
+  height: 50px;
+  padding-top: 15px;
+  background-color: gray;
+  margin-bottom: 20px;
+  &__text {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+.box {
+  padding: 20px;
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.textarea {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 50%;
+  transform: translateX(50%);
+  resize: none;
+  font-size: 20px;
+  width: 500px;
+  height: 300px;
+  padding: 20px;
+}
+
+.table {
+  width: 700px;
+  height: 500px;
+  border: 1px solid black;
+  margin: 0 auto;
+  &__title {
+    border: 1px solid black;
+    width: 80px;
+    transition: background-color 0.2s linear;
+    &:hover {
+      cursor: pointer;
+      background-color: #f8e17e;
+    }
+    &:active {
+      font-size: 10px;
+    }
+  }
+  &__cell {
+    border: 1px solid black;
+    text-align: center;
+  }
+}
