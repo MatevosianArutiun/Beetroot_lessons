@@ -1,0 +1,80 @@
+.card {
+  height: 540px;
+  width: 600px;
+  background-color: $main-collor;
+  position: absolute;
+  &__header {
+    height: 115px;
+    background-color: $header-color;
+    padding: 30px 60px 0 60px;
+  }
+  &__list {
+    width: 100%;
+    @include flex(space-between, center, row);
+  }
+
+  &__item {
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__item-active .card__title,
+  &__item-active .card__icon {
+    color: $white;
+    fill: $white;
+  }
+  &__item-active::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $white;
+    transition: width 0.2s ease-in-out;
+  }
+
+  &__icon {
+    width: 25px;
+    height: 25px;
+    fill: $no-activ;
+    margin-bottom: 7px;
+  }
+  &__title {
+    @include text($H100, 700, $no-activ);
+    margin-bottom: 30px;
+  }
+  &__content {
+    padding-top: 60px;
+  }
+  &__aside-left {
+    width: 40%;
+    text-align: center;
+    @include flex(center, center, column);
+  }
+  &__img {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  &__star-wrapper {
+    @include flex(center, center, row-reverse);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__star-icon {
+    width: 25px;
+    height: 25px;
+    fill: $no-activ;
+    &:hover,
+    &:hover ~ * {
+      fill: $star-color;
+    }
+  }
+  &__star-active,
+  &__star-active ~ * {
+    fill: $star-color;
+  }
+  &__aside-right {
+    width: 60%;
+  }
+}

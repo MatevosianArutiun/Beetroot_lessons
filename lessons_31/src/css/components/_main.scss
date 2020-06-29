@@ -1,0 +1,12 @@
+.main {
+  height: 100vh;
+  background-image: url(../images/bg_2.png);
+  &__container {
+    height: 100%;
+    background-image: url(../images/bg_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @include flex(center, center, column);
+  }
+}

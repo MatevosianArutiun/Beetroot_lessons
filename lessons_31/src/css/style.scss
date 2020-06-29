@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+// Core
+@import "./core/vars";
+@import "./core/mixins";
+@import "./core/common";
+
+// Common components
+@import "./components/common/card";
+
+// Components
+@import "./components/main";
